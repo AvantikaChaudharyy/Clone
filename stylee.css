@@ -1,0 +1,480 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: rgb(221, 201, 164);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 40px; /* Adjust the height as needed */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.buy-button {
+    background-color: #8e44ad;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.menu-icon {
+    display: none; /* Initially hide for larger screens */
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .buy-button {
+        margin-top: 10px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block; /* Show for smaller screens */
+    }
+
+    .menu-icon img {
+        height: 20px; /* Adjust the height as needed */
+    }
+}
+h1{
+    font-size: 70px;
+    align-items: center;
+}
+h2{
+    font-size: 50px;
+}
+.button-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.button-container button {
+    background-color: #2a2a6c; 
+    color:rgb(251, 251, 251);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.4s ease, transform 0.2s ease-in-out;
+}
+.button-container a{
+    color: white;
+    text-decoration: none;
+}
+
+.video-icon::before {
+    content: "\25B6"; /* Unicode character for play icon */
+    font-size: 20px;
+    margin-right: 5px;
+}
+.animated-image {
+    text-align: center;
+    margin: 20px;
+}
+
+.animated-image img {
+    max-width: 75%;
+    height: auto;
+    animation: scaleIn 4s ease-out; /* Animation properties */
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0); /* Start with a scale of 0 */
+    }
+    100% {
+        transform: scale(1); /* End with a scale of 1 */
+    }
+}
+.hero-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Background color for the hero section */
+}
+
+.hero-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    color: #777; /* Grey color for the subheading */
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.quote-container {
+    background-color: #d3b8ff; /* Light purple color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    margin-left:400px;
+    max-width: 400px; /* Set a maximum width for the container */
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.quote-container p {
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-container .star-icon::before {
+    content: "\2605"; /* Unicode character for a star icon */
+    font-size: 24px;
+    color: #FFD700; /* Gold color */
+    margin-right: 5px;
+}
+.feature-container {
+    background-color: #000; /* Black background color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 100%; /* Full width of its container */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.feature-subcontainer {
+    background-color: #2c2b2b; /* Light grey background color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    text-align: left;
+    margin: 20px 0;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.feature-container h2,
+.feature-subcontainer h3 {
+    color: white; /* White text color for headings */
+}
+.feature-subcontainer i {
+    margin-left: 500px;
+    position: absolute;
+    font-size: 40px;
+    color: #007bff; /* Blue color for the Firefox icon */
+}
+
+
+
+.feature-container p,
+.feature-subcontainer p {
+    color: white; /* White text color for subheadings */
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.feature-container .highlight {
+    color: red; /* Red text color for the highlighted word */
+    font-weight: bold;
+}
+.integration-section {
+    background-color: #0d0d0d; /* Light grey background color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.integration-section h2 {
+    color: white; /* White text color for heading */
+    margin-bottom: 10px;
+}
+
+.integration-section p {
+    color: #777; /* Grey color for subheading */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.integration-section img {
+    max-width: 100%;
+    border-radius: 15px; /* Rounded corners for the image */
+}
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Container background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    box-sizing: border-box;
+}
+p{
+    font-size: 35px;
+}
+.red{
+    color: red;;
+}
+.grey{
+    font-size: 28px;
+    color: #565454;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border color for the question */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f5f5f5; /* Background color for the question */
+    transition: background-color 0.3s ease;
+    position: relative;
+    padding-left: 30px; /* Add padding for the plus icon */
+}
+
+.faq-question i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border color for the answer */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* Background color for the answer */
+}
+
+.faq-question.active {
+    background-color: #e0e0e0; /* Background color when question is active */
+}
+
+.faq-question.active + .faq-answer {
+    display: block;
+}
+.pricing-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Container background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle effect */
+    box-sizing: border-box;
+}
+
+.pricing-plan {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.plan-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plan-price {
+    font-size: 36px;
+    color: #007bff; /* Blue color for the price */
+    margin-bottom: 10px;
+}
+
+.plan-description {
+    color: #777; /* Grey color for the description */
+    margin-bottom: 20px;
+}
+
+.plan-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff; /* White color for the text */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+.testimonials-container {
+    width: 100%;
+    margin: 50px auto;
+    overflow: hidden; /* Hide overflow for smoother animation */
+    border-radius: 20px;
+    background-color: rgb(241, 235, 235);
+}
+
+.testimonials-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.testimonial h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 14px;
+    color: #777;
+}
+
+.user-info {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Add animation class for sliding effect */
+.animate {
+    animation: slide 40s infinite; /* Adjust the duration as needed */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0); /* Back to the initial position */
+    }
+}
+.try-out-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff; /* White background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.try-out-button {
+    margin-top: 10px; /* Adjust the top margin as needed */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8e44ad; /* Purple color for the button */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease;
+}
+
+
+
+.try-out-button:hover {
+    background-color: #6c3483; /* Darker purple color on hover */
+    transform: scale(2); /* Scale up slightly on hover */
+}
+
+.happy-user-image {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 10px; /* Rounded corners for the image */
+}
+.footer {
+    height: 200px;
+    background-color: #676666; /* Footer background color */
+    padding: 20px;
+    color: #fff; /* Text color for links */
+    text-align: center;
+    position: relative;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links {
+    display: inline-block;
+    text-align: left;
+}
+
+.footer-links a {
+    color: #fff; /* Text color for links */
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+.social-media-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.social-media-icons img {
+    width: 30px; /* Adjust the width of social media icons as needed */
+    margin-left: 10px; /* Add margin between icons */
+}
